@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>UniLab</title>
+</head>
+<body>
+    <header class="flex-row" id="home">
+        <div class="logo">
+            <h1>
+                <a href="#">
+                    <img src="./images/Tourism (1).png" alt="Tourism Logo">
+                </a>
+            </h1>
+        </div>
+        <nav class="nav-bar">
+            <ul class="flex-row">
+                <li><a href="#home">home</a></li>
+                <li><a href="#aboutUs">about us</a></li>
+                <li><a href="#ourService">our service</a></li>
+                <li><a href="#tourPackage">tour package</a></li>
+                <li><a href="api.html">api</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="slider" id="slider">
+            <div id="place-of-slider"></div>
+            <div class="content flex-column">
+                <div class="imgTxt flex-row">
+                    <p id="price"></p>
+                </div>
+                <h2 id="travelCountry"></h2>
+                <p id="smallTxt"></p>
+            </div>
+            <div class="arrow-wrap flex-row" id="arrow">
+                <button class="left-Arrow" id="left"> ⬅ </button>
+                <button class="right-Arrow" id="right"> ➡ </button>
+            </div>
+        </div>
+    </section>
+        <div class="overlay" id="overlay"></div>
+        <div class="pop deactive" id="popup">
+            <button class="x" id="closePop">❌</button>
+            <div class="pop-content" id="popContent"></div>
+        </div>
+    <main>
+        <section class="services flex-row" id="ourService">
+            <div class="hot-service flex-column">
+                <p>Discover</p>
+                <h2>Our Hot Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto natus, vel maxime eveniet facere doloribus itaque eius esse nisi, deleniti facilis. Rerum amet omnis, perspiciatis commodi iure odit ad pariatur.
+                </p>
+            </div>
+            <section class="hot-wrap" id="wrap-service">
+            </section>
+        </section>
+
+        <section class="video-side">
+            <div class="video-side-wrap flex-column">
+                <div class="video-side-text flex-column">
+                    <h3>DISCOVER</h3>
+                    <h2>Watch Our Video Tour</h2>
+                </div>
+                <div class="video">
+
+                    <video poster="./images/rune-haugseng-727710.png" src="./video/Visit Greece - Minor Cyclades from above.mp4" type="video/mp4" class="video-player">
+                    </video>
+                    <button class="play-button" id="playButton"></button>
+                </div>
+            </div>    
+        </section>
+
+        <section class="increment-numbers flex-row" id="numberIncreaser"></section>
+
+
+        <section class="tour-package flex-column" id="tourPackage">
+            <div class="offer-wrap flex-column">
+                <h3>We offer</h3>
+                <h2>Popular Tour Package</h2>
+            </div>
+            <div class="tours flex-row" id="tours"></div>
+        </section>
+
+        <section class="subscribe-sec flex-column">
+            <div class="subscribe-wrap-cont flex-column">
+                <h2>Get 10% Off on Your Next Travel</h2>
+                <p>Maximum discount 1000$ per person</p>
+            </div>
+            <div class="subscribe-form">
+                <form class="subscribe-form flex-row" id="subForm">
+                    <input type="email" name="email" class="sub-input" id="subInput" placeholder="Enter your email">
+                    <button type="button" class="subscribe" id="subscribe">SUBSCRIBE</button>
+                </form>
+            </div>
+        </section>
+        <section class="people-comment flex-column">
+            <div class="ppl-th flex-column" id="aboutUs">
+                <h3>OUR SMILES</h3>
+                <h2>Happy Travelers</h2>
+            </div>
+            <div class="ppl-comment flex-row" id="pplComment"></div>
+        </section>
+
+        <section class="book-now flex-column">
+            <h2>Ready to plan your trip?</h2>
+            <button type="button" class="book--now--btn">Book now</button>
+        </section>
+
+        <section class="destinations">
+            <div class="destinations-txt flex-column" id="aboutUs">
+                <h3>DESTINATION</h3>
+                <h2>Popular Tourism Countries</h2>
+            </div>
+            <div class="countries">
+                <div class="country--wrap flex-row">
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="go--top" id="goTop"></div>
+    <div style="height: 1000px;"></div>
+    <footer></footer>
+    <script type="module" src="./script/script.js"></script>
+    <script type="module" src="./script/videoBtn.js"></script>
+    <script type="module" src="./script/autoIncrement.js"></script>
+    <script type="module" src="./script/forClips.js"></script>
+    <script src="./script/emailValid.js"></script>
+    <script src="./script/goTop.js"></script>
+</body>
+</html>
