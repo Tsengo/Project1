@@ -226,21 +226,21 @@ const tours = document.querySelector('#tours');
 
 const arrOfTourPackage = [
     {
-        img: 'blue beauty of greece.png',
+        img: 'Rectangle 8 copy 3.png',
         price: '$299/person',
         tourName: 'Blue Beauty of Greece',
         days: '5 Days / 6 Night',
         content: 'Honeymoon'
     },
     {
-        img: 'nature future.jpg',
+        img: 'Clip (22).png',
         price: '$178/person',
         tourName: 'Nature of Phuket',
         days: '3 Days / 4 Night',
         content: 'Holiday'
     },
     {
-        img: 'oo paris.jpg',
+        img: 'Rectangle 8 copy 5.png',
         price: '$1111/person',
         tourName: 'World Tour of Paris',
         days: '7 Days / 8 Night',
@@ -297,22 +297,22 @@ arrOfComment.forEach(element => {
 
 const arrDestination = [
     {
-        countryImg: 'thailand.jpg',
+        countryImg: 'mount.png',
         countryName: 'Thailand',
         price: '$900 - $1900'
     },
     {
-        countryImg: 'italy.jpg',
+        countryImg: 'rome.png',
         countryName: 'Italy',
         price: '$700 - $2000'
     },
     {
-        countryImg: 'indonesia.jpg',
+        countryImg: 'house.png',
         countryName: 'Indonesia',
         price: '$300 - $1100'
     },
     {
-        countryImg: 'singapore.jpg',
+        countryImg: 'mount14.png',
         countryName: 'Singapore',
         price: '$1900 - $2700'
     },

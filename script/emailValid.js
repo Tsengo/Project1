@@ -1,27 +1,50 @@
 // Submit form
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const form = document.getElementById('subForm')
+const form = document.getElementById('subForm');
 const emailInput = document.getElementById('subInput');
 const subscribeButton = document.getElementById('subscribe');
-
-const regIsFalse = function () {
-    if (!emailRegex.test(emailInput.value)) {
-        emailInput.classList.add('error')
+// LastForm
+const lastInput = document.getElementById('lastInput')
+const lastInputBtn = document.getElementById('lastBtn');
+const lastForm = document.getElementById('last-form');
+// Function of error Form and regexp
+const regIsFalse = function (element) {
+    if (!emailRegex.test(element.value)) {
+        element.classList.add('error')
+        lastInputBtn.classList.add('error')
     } else {
-        emailInput.value = '';
-        emailInput.classList.remove('error')
+        element.value = '';
+        element.classList.remove('error')
     }
-    emailInput.placeholder = 'Enter your email';
+    element.placeholder = 'Enter your email';
+};
+// Submit form function
+const fromSubmitted = function (element,regElement) {
+    element.addEventListener('submit', (e) => {
+        e.preventDefault();
+        regIsFalse(regElement)
+        window.history.replaceState({}, document.title, window.location.pathname);
+    });
 }
+// btn function submit
 subscribeButton.addEventListener('mouseup', (e) => {
-    regIsFalse();
+    regIsFalse(emailInput);
 });
-subscribeButton.addEventListener('mousedown', e => {
+
+subscribeButton.addEventListener('mousedown', (e) => {
     e.preventDefault();
     emailInput.classList.remove('error');
 });
-form.addEventListener('submit', (e) => {
+fromSubmitted(form, emailInput);
+
+// Last form clicked
+lastInputBtn.addEventListener('mouseup', (e) => {
+    regIsFalse(lastInput);
+});
+
+lastInputBtn.addEventListener('mousedown', (e) => {
     e.preventDefault();
-    regIsFalse()
-    window.history.replaceState({}, document.title, window.location.pathname);
-})
+    lastInput.classList.remove('error');
+    lastInputBtn.classList.remove('error')
+});
+fromSubmitted(lastForm, lastInput);
