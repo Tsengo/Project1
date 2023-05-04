@@ -263,19 +263,19 @@ arrOfTourPackage.map(element => {
 // PPl Thoughts
 const arrOfComment = [
     {
-        img: './woman.png',
+        img: 'woman.png',
         name: 'Ribeca Singh',
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
         imgComment: './Forma 1.png'
     },
     {
-        img: './avatar.png',
+        img: 'avatar.png',
         name: 'Jimmy dean',
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
         imgComment: './Forma 1.png'
     },
     {
-        img: './avatar.png',
+        img: 'avatar.png',
         name: 'Theodule Terer',
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
         imgComment: './Forma 1.png'
@@ -287,7 +287,7 @@ const pplComment = document.querySelector('#pplComment')
 arrOfComment.forEach(element => {
     let comments = `
         <div class="ppl--comment flex-column">
-            <img class="ppl--pic" src="./images/${element.img}">
+            <img class="ppl--pic" src="./images/${element.img}" alt="">
             <h3>${element.name}</h3>
             <p>${element.description}</p>
             <img src="./images/${element.imgComment}">
@@ -331,7 +331,7 @@ arrDestination.forEach(element => {
             <h2>${element.countryName}</h2>
             <p>${element.price}</p>
         </div>
-        <button class="country-btn"></button>
+        <div class="country-btn"></div>
     </div>`;
     countries.insertAdjacentHTML('afterbegin', countryPriceName);
     countryDiv.appendChild(countries);

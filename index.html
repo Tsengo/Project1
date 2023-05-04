@@ -21,7 +21,12 @@
     <title>UniLab</title>
 </head>
 <body>
-    <header class="flex-row" id="home">
+    <div class="burger--menu flex-column" id="burger">
+        <span class="span1"></span>
+        <span class="span2"></span>
+        <span class="span3"></span>
+    </div>
+    <header class="header--wrap flex-row" id="home">
         <div class="logo">
             <h1>
                 <a href="#">
@@ -138,7 +143,7 @@
     <footer class="flex-column">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.2106334366204!2d-87.92323688447355!3d44.53131957910101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802e61d64ca7a93%3A0xd35c038e0e1219bd!2sUniversity%20of%20Wisconsin-Green%20Bay!5e0!3m2!1sen!2sge!4v1683113725225!5m2!1sen!2sge" width="100%" height="435" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <section class="footer--wrapper flex-row">
-            <div class="flex-column">
+            <div class="quick--link flex-column">
                 <ul class="flex-column">
                     <h2>Quick Links</h2>
                     <li><a href="#home">Home </a></li>
@@ -147,7 +152,7 @@
                     <li><a href="#tourPackage">Infrastructure</a></li>
                 </ul>
             </div>
-            <div class="flex-column">
+            <div class="support flex-column">
                 <ul class="flex-column">
                     <h2>Support</h2>
                     <ul><p>Get Started</p></ul>
@@ -156,7 +161,7 @@
                     <ul><p>Ipsum</p></ul>
                 </ul>
             </div>
-            <div class="flex-column">
+            <div class="address flex-column">
                 <ul class="flex-column">
                     <h2>Address</h2>
                     <li><p>Address 14, 1 Ellis bridge ST,</a></li>
@@ -180,5 +185,6 @@
     <script type="module" src="./script/forClips.js"></script>
     <script src="./script/emailValid.js"></script>
     <script src="./script/goTop.js"></script>
+    <script src="script/burger.js"></script>
 </body>
 </html>
