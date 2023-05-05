@@ -20,8 +20,6 @@ const newDate = String(new Intl.DateTimeFormat(navigator.language, options).form
 dataTime.textContent = newDate;
 }, 1000);
 
-
-
 const __twoDig__ = function (time) {
     return time < 10 ? '0'+time : time;
 };
